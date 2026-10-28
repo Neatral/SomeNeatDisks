@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "some_neat_disks",
+	"version": "${version}",
+	"name": "SomeNeatDisks",
+	"description": "Custom music disks added by Neatral",
+	"authors": [
+		"Neatral"
+	],
+	"contact": {
+		"homepage": "https://linktr.ee/Neatral",
+		"sources": "https://github.com/Neatral/SomeNeatDisks"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/some_neat_disks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.some_neat_disks.SomeNeatDisks"
+		],
+		"fabric-datagen": [
+			"com.some_neat_disks.SomeNeatDisksDataGenerator"
+		],
+		"client":[
+			"com.some_neat_disks.SomeNeatDisksClient"
+		]
+	},
+	"mixins": [
+		"some_neat_disks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
